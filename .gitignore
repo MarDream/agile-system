@@ -1,0 +1,15 @@
+/target/
+/.classpath
+/.project
+.settings/ 
+target/
+bin/
+
+*.classpath
+*.project
+
+agile-frontend/node_modules/
+agile-frontend/dist/
+agile-frontend/.codex-artifacts/
+agile-frontend/build.latest.log
+agile-backend/**/target/

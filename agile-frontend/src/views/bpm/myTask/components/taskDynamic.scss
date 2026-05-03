@@ -1,0 +1,54 @@
+.leftBox,
+.leftBoxDyminc,
+.rightBox {
+  box-sizing: border-box;
+}
+
+.leftBox {
+  width: 100%;
+}
+
+.leftBoxDyminc {
+  display: inline-block;
+  width: calc(100% - 356px);
+  vertical-align: top;
+}
+
+.leftContent {
+  margin-top: 12px;
+  overflow: auto;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.rightBox {
+  display: inline-block;
+  width: 340px;
+  margin-left: 16px;
+  vertical-align: top;
+}
+
+.rightBox :deep(.el-card__body) {
+  padding: 16px;
+}
+
+.header-fix-top {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  padding-bottom: 8px;
+  background: #fff;
+}
+
+@media screen and (max-width: 1400px) {
+  .leftBoxDyminc,
+  .rightBox {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .rightBox {
+    margin-top: 16px;
+  }
+}
